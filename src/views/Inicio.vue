@@ -1,6 +1,9 @@
 <template>
     <div>
         <h1>Inicio</h1>
+        <router-link to='/agregar'>
+            <button>Agregar</button>
+        </router-link>
         <ul>
              <li v-for="item in tareas" :key="item.id">
                 {{ item.nombre }} - {{ item.id }}

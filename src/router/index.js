@@ -10,13 +10,19 @@ const routes = [
         path: '/',
         name: 'Inicio',
         component: () =>
-            import ( /* webpackChunkName: "about" */ '../views/Inicio.vue')
+            import ( /* webpackChunkName: "inicio" */ '../views/Inicio.vue')
     },
     {
         path: '/editar/:id',
         name: 'Editar',
         component: () =>
-            import ( /* webpackChunkName: "about" */ '../views/Editar.vue')
+            import ( /* webpackChunkName: "editar" */ '../views/Editar.vue')
+    },
+    {
+        path: '/agregar',
+        name: 'Agregar',
+        component: () =>
+            import ( /* webpackChunkName: "agregar" */ '../views/Agregar.vue')
     }
 ]
 
